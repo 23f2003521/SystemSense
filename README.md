@@ -74,6 +74,7 @@ python -m venv venv
 venv\Scripts\activate
 pip install -r requirements.txt
 python installer.py  (run this command in powershell as administrator by going to your utility path and then "venv\Scripts\activate")
+python scheduler.py (in same path)
 It will ask for username , email and password , provide your details 
 
 
@@ -84,7 +85,7 @@ python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 python installer.py   (run this command in shell as administrator by going to your utility path and then "source venv/bin/activate")
-
+python scheduler.py (in same path)
 For Linux/macOS, the installer creates a cron job.
 
 4️⃣ Frontend Setup
