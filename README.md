@@ -45,8 +45,24 @@ venv\Scripts\activate   # (Windows)
 source venv/bin/activate  # (Linux/macOS)
 
 pip install -r requirements.txt
-flask db upgrade
 python app.py
+#once it runs keep admin credentials from app.py 
+and comment out these portion so that each time you run your application it does not run each time db.create_All()
+"""db.create_all()
+    from models import User  # adjust import if your model name differs
+    from werkzeug.security import generate_password_hash
+    if not User.query.filter_by(username="admin").first():
+        admin_user = User(
+            username="admin",
+            email="admin@solsphere.com",
+            password=generate_password_hash("admin123"),  # strong password recommended
+            role="admin"
+        )
+        db.session.add(admin_user)
+        db.session.commit()
+        print("[INFO] Admin user created: username=admin, password=admin123")
+    else:
+        print("[INFO] Admin user already exists.")"""    please comment it out in app.py
 
 The backend runs by default at:
 http://127.0.0.1:5000
