@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+instance/
+*.sqlite3
+
+# Virtual environment
+venv/
+ENV/
+env/
+.venv/
+
+# Node.js / Frontend
+node_modules/
+dist/
+build/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+desktop.ini
+
+# Logs
+*.log
+*.out
+*.pid
+
+# Environment & config files
+.env
+.env.*
+*.bak
+*.swp
+
+# VS Code / Editors
+.vscode/
+.idea/
+
+# Cache
+.cache/
